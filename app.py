@@ -19,6 +19,12 @@ import re
 from datetime import datetime
 from urllib.parse import urljoin, urlparse
 import time
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+api_key = os.getenv("OPENAI_API_KEY")
 
 import streamlit as st
 import requests
