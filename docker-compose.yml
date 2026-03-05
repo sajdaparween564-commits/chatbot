@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  chatbot:
+    image: my-chatbot-image
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '5000:5000'
+    environment:
+      - ENV_VAR_NAME=value
+    volumes:
+      - .:/app
+    restart: unless-stopped
