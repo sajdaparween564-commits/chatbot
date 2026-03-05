@@ -1,0 +1,7 @@
+[server]
+headless = true
+port = 8501
+
+[runner]
+# Whether to enable debugging in the browser
+debug = false
